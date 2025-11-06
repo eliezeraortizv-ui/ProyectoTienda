@@ -1,0 +1,45 @@
+/*
+Regla CSS consta de 2 partes:
+
+Selector{
+Bloque de declaraciones (son los atributos que vamos a modificar)
+atributo: valor;
+}
+
+*/
+
+ /*Ejemplos de selector por medio de tags*/
+
+ h1{
+        color:orangered;
+        background-color: aqua;
+    }
+
+    button{
+        background-color: aquamarine;
+        color: blanchedalmond;
+    }
+
+    /*Otro tipo de selector es el de clase y se ocupa cuando se requieren estilos diferentes*/
+
+.bg-cornflowerblue{
+background-color: cornflowerblue;
+}
+
+.bg-yellowgreen-c-dmgray{
+background-color: yellowgreen;
+color: dimgray;
+}
+
+.voladores{
+background-color: orangered;
+color: blue;
+}
+
+.text-20{
+font-size: 20px;
+}
+
+.text-32{
+font-size: 32px;
+}
