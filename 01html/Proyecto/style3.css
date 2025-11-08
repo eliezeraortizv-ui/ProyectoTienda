@@ -1,0 +1,110 @@
+/* ===============================
+   RESPONSIVE CON FLEXBOX
+=============================== */
+
+/* Contenedores generales */
+.container, .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PRODUCTOS */
+#productos .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#productos .card {
+  flex: 1 1 300px; /* Se adapta al ancho del dispositivo */
+  max-width: 350px;
+}
+
+/* OFERTAS */
+#ofertas .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#ofertas .card {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+/* OPINIONES */
+#opiniones .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#opiniones .card {
+  max-width: 600px;
+}
+
+/* FOOTER con Flexbox */
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+}
+
+footer .col-md-4 {
+  flex: 1 1 300px;
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 768px) {
+  nav.navbar {
+    text-align: center;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  }
+
+  #productos h2, #ofertas h2, #opiniones h2 {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+/* ===============================
+   CAROUSEL CENTRADO Y RESPONSIVE
+=============================== */
+
+.carousel-item {
+  position: relative;
+  height: 70vh; /* altura flexible: 70% del alto de la pantalla */
+  min-height: 300px;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;  /* mantiene proporción sin deformar */
+  object-position: center center; /* centra la imagen horizontal y verticalmente */
+  transform: translate(-50%, -50%);
+  filter: brightness(0.9);
+}
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 50vh; /* más pequeño en móviles */
+  }
+}

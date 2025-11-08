@@ -1,0 +1,205 @@
+/* ===============================
+   ESTILOS GENERALES
+=============================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Colores personalizados */
+.bg-perla {
+  background-color: #f9f9f9;
+}
+
+.text-azul {
+  color: #0d6efd !important;
+}
+
+.bg-producto {
+  background-color: #2c3e50;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* ===============================
+   NAVBAR
+=============================== */
+
+.navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* ===============================
+   CAROUSEL
+=============================== */
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 500px;
+  filter: brightness(0.85);
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* ===============================
+   PRODUCTOS
+=============================== */
+
+#productos h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.card {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Productos destacados */
+.bg-producto {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.card-body h5 {
+  font-weight: 600;
+}
+
+.card-body .btn {
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+/* ===============================
+   OFERTAS
+=============================== */
+
+#ofertas h2 {
+  font-weight: 600;
+}
+
+#ofertas .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#ofertas .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   OPINIONES
+=============================== */
+
+#opiniones h2 {
+  font-weight: 600;
+}
+
+#opiniones .card {
+  border-left: 5px solid #0d6efd;
+  transition: background 0.3s ease;
+}
+
+#opiniones .card:hover {
+  background-color: #f0f8ff;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+
+footer {
+  font-size: 0.95rem;
+}
+
+footer h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer p,
+footer li {
+  margin-bottom: 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .form-control {
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+}
+
+footer .btn {
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+footer .btn:hover {
+  background-color: #0b5ed7;
+}
+
+footer .border-top {
+  border-color: #444 !important;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .carousel-item img {
+    height: 350px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .col-md-4 {
+    margin-bottom: 1.5rem;
+  }
+}
